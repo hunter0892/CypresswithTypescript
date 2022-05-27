@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-26T10:03:32.350Z",
+    "end": "2022-05-26T10:03:59.906Z",
+    "duration": 27556,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "67082c3c-0fea-47eb-a206-f8b5fb8f7d30",
+      "title": "",
+      "fullFile": "cypress/integration/google_search.ts",
+      "file": "cypress/integration/google_search.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "google search functionality 1",
+          "fullTitle": "google search functionality 1",
+          "timedOut": null,
+          "duration": 13003,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.log('Google 1st test Starts');\ncy.visit('https://www.google.com/');\ncy.get('.gLFyf').type('Automation Step by Step {enter}');\ncy.contains('Videos').click();\n//https://opensource-demo.orangehrmlive.com/",
+          "err": {},
+          "uuid": "f7b73636-f56f-4075-8fa2-230a78fa9d99",
+          "parentUUID": "67082c3c-0fea-47eb-a206-f8b5fb8f7d30",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "google search functionality 2",
+          "fullTitle": "google search functionality 2",
+          "timedOut": null,
+          "duration": 12304,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.log('Google 2nd test Starts');\ncy.visit('https://www.google.com/');\ncy.get('.gLFyf').type('Automation Step by Step {enter}');\ncy.contains('Videos').click();\n//https://opensource-demo.orangehrmlive.com/",
+          "err": {},
+          "uuid": "9eed766f-9941-4407-871a-a1f60a2082e5",
+          "parentUUID": "67082c3c-0fea-47eb-a206-f8b5fb8f7d30",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "f7b73636-f56f-4075-8fa2-230a78fa9d99",
+        "9eed766f-9941-4407-871a-a1f60a2082e5"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 25307,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
