@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  /*"scripts": {
     "report-status": "Complete report creation with merging into one report and Html file Generated",
     "pretest": "rimraf -r ./cypress/reports/*.json",
     "test":"npm run cypress-test || npm run posttest",
@@ -12,7 +12,12 @@
     "merge-reports": "mochawesome-merge ./cypress/reports/*.json > report1.json",
     "generate-reports": "marge ./report1.json --reportDir ./cypress/reports",
     "index":"start ./cypress/reports/report1.html"
-  },
+  },*/
+  "scripts": {
+        "test:chrome": "cypress run --browser chrome",
+        "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
+        "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
