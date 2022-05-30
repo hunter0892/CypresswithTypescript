@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - 'master'
-
+#jobs are written here
 jobs:
   cypress-test:
     name: Run on Chrome 83
