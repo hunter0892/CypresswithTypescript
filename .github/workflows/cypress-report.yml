@@ -34,6 +34,7 @@ jobs:
       - name: Merge test reports
         run: npm run combine:report
 
+
       - name: Generate HTML report
         run: npm run generate:report
       
